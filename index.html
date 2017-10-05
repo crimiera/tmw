@@ -1,13 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Kickoff</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kickoff</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
 			██╗  ██╗██╗ ██████╗██╗  ██╗ ██████╗ ███████╗███████╗
 			██║ ██╔╝██║██╔════╝██║ ██╔╝██╔═══██╗██╔════╝██╔════╝
 			█████╔╝ ██║██║     █████╔╝ ██║   ██║█████╗  █████╗
@@ -18,46 +19,79 @@
 			Built with Kickoff - trykickoff.com
 		-->
 
-		<link rel="stylesheet" href="/assets/dist/css/kickoff.css">
+    <link rel="stylesheet" href="/assets/dist/css/kickoff.css">
 
-		<!-- For mobile icons & social metatags etc, see http://trykickoff.com/learn/html.html#socialmeta -->
+    <!-- For mobile icons & social metatags etc, see http://trykickoff.com/learn/html.html#socialmeta -->
 
-		<script>
-			var win = window, doc = win.document, docElem = doc.documentElement;
+    <script>
+        var win = window,
+            doc = win.document,
+            docElem = doc.documentElement;
 
-			// Replace 'no-js'/'js' class on <html>
-			docElem.className = docElem.className.replace(/\bno-js\b/g, '') + ' js ';
+        // Replace 'no-js'/'js' class on <html>
+        docElem.className = docElem.className.replace(/\bno-js\b/g, '') + ' js ';
 
-			/*
-				Dynamically load scripts / cutting the mustard test
-				https://gist.github.com/nicbell/9a9c919e6d69aff47e285945550b445c
-			*/
-		</script>
+        /*
+        	Dynamically load scripts / cutting the mustard test
+        	https://gist.github.com/nicbell/9a9c919e6d69aff47e285945550b445c
+        */
+    </script>
 
-		<!-- Configure Polyfills https://cdn.polyfill.io/ -->
-		<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-	</head>
-	<body>
-		<div class="skipToContent">
-			<a href="#main" class="btn btn--primary">Skip to main content</a>
-		</div>
+    <!-- Configure Polyfills https://cdn.polyfill.io/ -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+</head>
 
-		<!--[if lte IE 9]>
+<body>
+
+
+    <!--[if lte IE 9]>
 			<div class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 		<![endif]-->
 
 
-		<div id="main" class="l-container" role="main">
+    <div id="main" class="l-container" role="main">
+        <section class="wideBoy wideBoy--dark wideBoy--hero primary">
+            <div class="l-container">
+                <h1 class="wideBoy-title">
+                    Test
 
-		</div><!-- Close #main -->
+
+                </h1>
+
+            </div>
+        </section>
+
+        <div class="g g--stack--mid g--demo">
+            <div class="g-col g-span9--mid">
+                <div class="g-content">
+										
+										<h2>USD/BITCOIN</h2>
+                    <p>https://www.coindesk.com/api/</p>
+										<div id="bit-usd"></div>
+                </div>
+            </div>
+        </div>
+        <div class="g g--stack--mid g--demo">
+            <div class="g-col g-span9--mid">
+                <div class="g-content">
+                    <h2>USD(BITCOIN)/ GBP</h2>
+                    <p>https://docs.openexchangerates.org/docs/convert</p>
+                    <div id="bit-gbp"></div>
+                </div>
+            </div>
+        </div>
 
 
-		<script src="/assets/dist/js/kickoff.js"></script>
+    </div>
 
-		<!--
+
+    <script src="/assets/dist/js/kickoff.js"></script>
+
+    <!--
 			Use Google Analytics? Add the embed from here:
 			https://gist.github.com/mrmartineau/6b96e3e12c315af33ad5
 		-->
 
-	</body>
+</body>
+
 </html>
